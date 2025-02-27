@@ -1,0 +1,10 @@
+--- Transcript ---
+here this is the best day in my life
+
+
+--- Sentiment Analysis ---
+Overall Sentiment Score: 0.9210000038146973
+Overall Sentiment Magnitude: 0.9679999947547913
+Compound Score: 0.8915279988617897
+Overall Sentiment: POSITIVE
+

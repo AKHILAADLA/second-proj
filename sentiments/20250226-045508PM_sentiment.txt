@@ -1,0 +1,10 @@
+Overall Sentiment Score: 0.9160000085830688
+Overall Sentiment Magnitude: 0.9629999995231628
+Compound Score: 0.8821080078287125
+Overall Sentiment: POSITIVE
+
+Sentence-level Analysis:
+Sentence: here I love ice creams
+  Score: 0.9160000085830688, Magnitude: 0.9639999866485596
+
+Language: en

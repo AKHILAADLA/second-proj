@@ -1,0 +1,10 @@
+--- Transcript ---
+third movie is very bad
+
+
+--- Sentiment Analysis ---
+Overall Sentiment Score: -0.9070000052452087
+Overall Sentiment Magnitude: 0.9779999852180481
+Compound Score: -0.8870459917225837
+Overall Sentiment: NEGATIVE
+

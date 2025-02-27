@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speech Interface & Sentiment Analysis App</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Speech Interface & Sentiment Analysis App</h1>
+    
+    <!-- Audio Recording Section -->
+    <section id="record-section" class="section">
+      <h2>Record Audio</h2>
+      <button id="record" class="btn btn-record">Record</button>
+      <button id="stop" class="btn btn-stop" disabled>Stop</button>
+      <div id="timer">0:00</div>
+      <div class="files-group">
+        <h2>Uploaded Recordings</h2>
+        <ul>
+          {% for file in recordings %}
+            <li>
+              <a href="{{ url_for('uploaded_file', filename=file) }}">{{ file }}</a>
+              - <a href="#" class="view-text" data-url="{{ url_for('transcript_file', filename=file.rsplit('.', 1)[0] + '.txt') }}">View Transcript & Sentiment</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Text-to-Speech Section -->
+    <section id="tts-section" class="section">
+      <h2>Text to Speech</h2>
+      <form action="/upload_text" method="POST">
+        <input type="text" name="text" placeholder="Enter text to convert to audio" required>
+        <button type="submit" class="btn btn-convert">Convert</button>
+      </form>
+    </section>
+    
+    <!-- Files Display Section -->
+    <section id="files-section" class="section">
+      <div class="files-group">
+        <h2>Synthesized Audio Files</h2>
+        <ul>
+          {% for file in tts_files %}
+            <li>
+              <a href="{{ url_for('tts_file', filename=file) }}">{{ file }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="files-group">
+        <h2>Original Text Inputs (with Sentiment Analysis)</h2>
+        <ul>
+          {% for file in tts_texts %}
+            <li>
+              <a href="#" class="view-text" data-url="{{ url_for('tts_text_file', filename=file) }}">{{ file }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="messages">
+          <ul>
+            {% for message in messages %}
+              <li>{{ message }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    {% endwith %}
+  </div>
+  
+  <!-- Modal for displaying text file content -->
+  <div id="textModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <pre id="modalText"></pre>
+    </div>
+  </div>
+  
+  <script src="/static/script.js"></script>
+</body>
+</html>

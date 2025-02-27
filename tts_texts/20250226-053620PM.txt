@@ -1,0 +1,9 @@
+--- Original Text ---
+That movie is bad
+
+--- Sentiment Analysis ---
+Overall Sentiment Score: -0.8939999938011169
+Overall Sentiment Magnitude: 0.9750000238418579
+Compound Score: -0.8716500152707098
+Overall Sentiment: NEGATIVE
+

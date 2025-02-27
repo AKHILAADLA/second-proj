@@ -1,0 +1,10 @@
+Overall Sentiment Score: 0.777999997138977
+Overall Sentiment Magnitude: 0.8059999942779541
+Compound Score: 0.6270679932422638
+Overall Sentiment: NEUTRAL
+
+Sentence-level Analysis:
+Sentence: I Love Icecreams
+  Score: 0.7789999842643738, Magnitude: 0.8069999814033508
+
+Language: en

@@ -1,0 +1,9 @@
+--- Original Text ---
+This is the best day in my life
+
+--- Sentiment Analysis ---
+Overall Sentiment Score: 0.9160000085830688
+Overall Sentiment Magnitude: 0.9660000205039978
+Compound Score: 0.8848560270729067
+Overall Sentiment: POSITIVE
+

@@ -1,0 +1,10 @@
+Overall Sentiment Score: 0.9120000004768372
+Overall Sentiment Magnitude: 0.9350000023841858
+Compound Score: 0.8527200026202202
+Overall Sentiment: POSITIVE
+
+Sentence-level Analysis:
+Sentence: I love bananas
+  Score: 0.9129999876022339, Magnitude: 0.9350000023841858
+
+Language: en

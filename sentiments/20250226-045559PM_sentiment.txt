@@ -1,0 +1,10 @@
+Overall Sentiment Score: 0.9470000267028809
+Overall Sentiment Magnitude: 0.9769999980926514
+Compound Score: 0.9252190242824554
+Overall Sentiment: POSITIVE
+
+Sentence-level Analysis:
+Sentence: i love India
+  Score: 0.9470000267028809, Magnitude: 0.9779999852180481
+
+Language: en
