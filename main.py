@@ -10,7 +10,7 @@ from google.cloud import language_v2
 
 # Initialize Flask app
 app = Flask(__name__)
-app.secret_key = "your_secret_key"  # Needed for flashing messages
+app.secret_key = "your_secret_key"  
 
 # Define directories for uploads and generated files
 UPLOAD_FOLDER = 'uploads'
@@ -18,13 +18,10 @@ TRANSCRIPTS_FOLDER = 'transcripts'  # For audio transcriptions + sentiment
 TTS_FOLDER = 'tts'
 TTS_TEXT_FOLDER = 'tts_texts'  # For text input + sentiment
 
-# Allowed audio file extension
 ALLOWED_EXTENSIONS = {'wav'}
 
-# Set app config
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-# Ensure necessary directories exist
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(TRANSCRIPTS_FOLDER, exist_ok=True)
 os.makedirs(TTS_FOLDER, exist_ok=True)
